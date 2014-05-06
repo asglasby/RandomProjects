@@ -3,7 +3,7 @@
 //Use the Parameter Testing feature in the box below to test your code with different arguments.
 
 function SimpleSymbols(str) {
-
+    "use strict";
     // code goes here  
     return str;
 

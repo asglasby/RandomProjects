@@ -1,4 +1,5 @@
 ﻿function LetterChanges(sen) {
+    "use strict";
 
     //sen.charCodeAt(i)
     var newString = "";

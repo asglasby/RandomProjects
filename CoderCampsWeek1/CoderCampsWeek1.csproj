@@ -67,6 +67,7 @@
   <ItemGroup>
     <Content Include="index.html" />
     <Content Include="indexCC.html" />
+    <Content Include="jsArrays.js" />
     <Content Include="jsCoderByte10AlphabetSoup.js" />
     <Content Include="jsCoderByte11ABCheck.js" />
     <Content Include="jsCoderByte1FirstReverse.js" />
@@ -76,6 +77,7 @@
     <Content Include="jsCoderByte4LetterChanges.js" />
     <Content Include="jsCoderByte5SimpleAdding.js" />
     <Content Include="jsCoderByte6LetterCapitalize.js" />
+    <Content Include="jsCoderByte4LetterChanges2.js" />
     <Content Include="jsCoderByte7SimpleSymbols.js" />
     <Content Include="jsCoderByte8CheckNums.js" />
     <Content Include="jsCoderByte9TimeConvert.js" />

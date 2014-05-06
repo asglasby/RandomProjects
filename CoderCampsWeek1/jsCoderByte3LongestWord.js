@@ -1,4 +1,5 @@
 ﻿function LongestWord(sen) {
+    "use strict";
 
     var splitSentence = sen.split(" ");
     var wordToCompare = splitSentence[0];

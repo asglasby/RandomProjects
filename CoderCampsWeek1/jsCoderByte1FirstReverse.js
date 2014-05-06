@@ -1,4 +1,5 @@
 ﻿function FirstReverse(str) {
+    "use strict";
     i = str.length;
     var newStr = "";
     
