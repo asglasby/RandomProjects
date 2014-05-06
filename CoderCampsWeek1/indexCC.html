@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href ="style.css" rel ="stylesheet" />
+    
+</head>
+<body>
+    <canvas id="wittykitty" width="800" height="450">
+        <!-- Fall-back content here, just like with video and audio-->
+    </canvas>
+    <script src="processing-1.3.6.js"></script>
+    <script type="text/processing" data-processing-target="mycanvas">
+        void setup() {
+        size(400, 400);
+        background(255);
+        fill(255);
+        noLoop();
+        PFont fontA = loadFont("courier");
+        textFont(fontA, 14);
+        }
+
+        void draw() {
+        //Your Canvas Drawings from Khan Academy go HERE!
+        }
+
+        <!-- For Animations and to change the size of the canvas, you'll need to make two changes to the above code
+            void setup() {
+            size(400, 400); -- Change this to the width and height you want
+            noLoop();     --- Change this to loop() with a lower case 1 if you have animation
+            }
+
+            void draw() { --- Change from var draw = function() { on Khan Academy
+            // Your Canvas Drawings from Khan Academy go HERE!
+            }
+
+            -->
+
+    </script>
+    <script src="_main.js"></script>
+</body>
+</html>

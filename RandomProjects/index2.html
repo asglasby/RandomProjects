@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <article>
+        <pre>
+/////Three Ways to Write Funciton //////
+///FIRST WAY TO WRITE A FUNCTION //////
+function functionName() {
+  doSomething
+}
+///SECOND WAY TO WRITE A FUNCTION //////
+var functionName = function() {
+};
+///THIRD WAY TO WRITE A FUNCTION //////
+var functionName;
+  functionName = function() {
+};
+//assign textToPlace into the HTML document under paragraph with the id "greetParagraph"
+var textToPlace = "Hello world!";
+document.getElementById("greetParagraph").innerHTML = textToPlace;
+// The concatenation of a string "The answer is " and the variable - part2.
+document.getElementById("code").innerHTML = "The answer is " + part2;
+// Sample of text value "212" whose ID is stored in variable - storeId.
+document.getElementById(storedId).innerHTML = "212";
+ 
+//The value from "field1" will get placed in paragraph with id "p1"
+document.getElementById("p1").innerHTML = document.getElementById("field1").value; 
+//If statement to fill a div with id "div1" in with something.
+if (document.getElementById("div1").innerHTML === "") {
+   document.getElementById("div1").innerHTML = "Something";
+} 
+//Text surrounded by emphasis tags.
+document.getElementById("p1").innerHTML = "This <em>is</em> it";
+//text represented by the variable - divText with id "age"
+document.getElementById("age").innerHTML = divText;
+// Sample code to display the contents of the paragraph as an alert.
+<p id="p1">
+ This is what I'm talking about.
+ </p>
+        <input type="button" value="Click to see this text in an alert"
+               onclick="showAlert();">
+
+ 
+<script>
+    function showAlert() {
+        var content = document.getElementById("p1").innerHTML;
+        alert(content);
+    }
+ </script>
+Or you could skip the variable assignment and write: 
+  alert(document.getElementById("p1").innerHTML);
+//SAMPLE USING CSS CLASSNAME TO MAKE IMAGE INVISIBLE VIA A CLASS TO A HTML ELEMENT ID
+<img src="Blobfish.jpg" id="ugly" onclick="makeInvisible();">
+
+function makeInvisible() {
+  document.getElementById("ugly").className = "hidden";
+}
+CSS file
+.hidden {display: none;}
+//SAMPLE ADDING A CLASS TO WHILE PRESERVERING THE CURRENT CLASS  **** A SPACE BEFORE THE CLASS NAME IS REQUIRED ****
+ function makeBig() { 
+   document.getElementById(" p1"). className + = " big"; 
+}
+//SAMPLE CODE TO SHOW ANSWER WHEN THE BUTTON IS CLICKED.
+<h3>Watch for answer below.</h3>
+        <p id="p1">Answer will appear here.</p>
+        <input type="button" value="Click to see answer"
+               onclick="showAnswer();">
+
+ 
+<script>
+    function showAnswer() {
+        document.getElementById("p1").innerHTML = "4";
+    }
+ </script>
+//Assign the contents of the div with the id "div1" to the variable txt, which hasn't been declared beforehand.
+var txt = document.getElementById("div1").innerHTML;
+// SWAPPING IMAGES USING THE ONMOUSEOVER EVENT
+< img src =" before-pic.jpg" onMouseover =" src =' after-pic.jpg'" >
+//SWAPPING IMAGES USING A FUNCTION
+< img src =" before-pic.jpg" id =" before" onMouseover =" swapPic();" > 
+//This is the function code. 
+ function swapPic() { 
+  document.getElementById(" before"). src = "after-pic.jpg"; 
+ }
+//GENERAL PURPOSE ROUTINE TO SWAP IMAGES FOR ANY PIC
+< img src =" before-pic.jpg" id =" before" onMouseover =" swapPic( id,'after-pic.jpg');">
+ function swapPic( eId, newPic) { 
+   document.getElementById( eId).src = newPic; 
+ }
+//SWAPPING IMAGES USING HTML ELEMENT PROPERTY
+ function swapPic() { 
+   document.getElementById(" before"). src = "after-pic.jpg"; 
+ }
+//A MORE COMMON WAY TO SWAP IMAGES
+function swapPic() { 
+ var pic = document.getElementById(" before"); 
+ pic.src = "after-pic.jpg";
+} 
+//
+//////Here's a function that uses the verbose approach to find out the address of a link that has the id "link1". ///////
+The function probes the href property of the link tag. For example, if href equals "http:// wikipedia.org" that
+address winds up in the variable address.
+function getAddress() { 
+ var link = document.getElementById(" link1"); 
+ var address = link.href; 
+}
+/////// This function changes the formatting of a form that has the id "f12" by changing its class. 
+function enlargeForm() { 
+ var frm = document.getElementById(" link1"); 
+ frm.className = "jumbo"; 
+}
+///////this function adds the class "big" to an element. If, for example, the new class, "big," specifies a larger font size for the element than it has originally, 
+///////the result is that the text inside the element gets bigger.//////////
+function makeBig() { 
+ document.getElementById(" p1"). className + = " big"; 
+} 
+///////Another way to specify style properties without removing any other styles. whether those styles are specified in css or inline. 
+Example: If the heading, paragraph, or div has an initial size of 1em, the function doubles the size of its contents. 
+If the element has an initial style of bold Georgia italic with 12-pixel borders, all of this formatting is preserved. Only the size changes. ////////
+function makeBig() {
+ document.getElementById(" p1"). style.fontSize = "2em"; 
+}
+This statement left-floats an image. document.getElementById(" pic99"). style.cssFloat = "left"; This statement makes an element invisible.
+</pre>
+    </article>
+    <!--<script src="objectMethodExample.js"></script>
+    <script src="objectMethodExample.js"></script>-->
+    <script src="PS_JavascriptFromScratch.js"></script>
+</body>
+</html>
